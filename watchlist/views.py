@@ -13,7 +13,6 @@ def movie_list(request):
     data = {
         'movies': list(movies.values())
     }
-
     return JsonResponse(data)
 
 def movie_detail(request, pk):
